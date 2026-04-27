@@ -1,49 +1,96 @@
 <html>
-    <head> 
-    <title>The login page</title>
-    <style> #Header1st { color:rgb(202, 129, 33);background-color:antiquewhite;}</style>
 
+<head>
+    <title>
+        Login page
+    </title>
+    <style>
+        body {
+            background-image: url(Autumn.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        form {
+
+            width: 350;
+            background-color: rgb(111, 78, 61);
+            border-radius: 10px;
+
+        }
+
+        .basic {
+            display: block;
+            margin: 5px;
+            padding: 5px;
+
+        }
+
+        #submit {
+            width: 200;
+            display: block;
+            background-color: rgb(142, 58, 2);
+            margin-bottom: 10px;
+        }
+
+        .add {
+            display: block;
+        }
+
+        input,
+        label {
+            margin: 5px;
+
+
+
+        }
+    </style>
 </head>
 
+<body>
+    <center>
 
-<body style="background-color: rgb(255, 250, 243);">
-    <h1 id="Header1st">LOGIN INFORMATION</h1>
-    <hr>
-    <form action="page1.html">
-<label for 1stname style="background-color:antiquewhite;color:rgb(202, 129, 33)">Enter your first name:</label>
-<input type="text" name="1stname">
-<br><br>
-<label for user_pass style="background-color:antiquewhite;color:rgb(202, 129, 33)">Password</label>
-<input type="password" name="user_pass">
-<br><br>
-<h3>PLease choose your department</h3>
-<label for computer style="background-color:antiquewhite;color:rgb(202, 129, 33)">computer science department</label>
-<input type="radio" name="subject" value="computer"><br><br>
-<label for mechanics style="background-color:antiquewhite;color:rgb(202, 129, 33)">Mechanics department</label>
-<input type="radio" name="mechanics">
-<br><br>
-<label for Gematics style="background-color:antiquewhite;color:rgb(202, 129, 33)">Geomatics department</label>
-<input type="radio" name="subject" value="Geomatics">
-<br><br>
-<label for Electricity style="background-color:antiquewhite;color:rgb(202, 129, 33)">Electricity department</label>
-<input type="radio" name="subject" value="Electricity">
-<br><br>
-<label for civil style="background-color:antiquewhite;color:rgb(202, 129, 33)">civil department</label>
-<input type="radio" name="subject" value="civil"><br><br>
-<label for Architecture style="background-color:antiquewhite;color:rgb(202, 129, 33)">Architecture department</label>
-<input type="radio" name="subject" value="Architecture"><br><br>
-<hr><hr>
-<img src="LOGIN.jpg" width="100">
-<h3 style="background-color:antiquewhite;color:rgb(202, 129, 33)">choose your preferable subject</h3>
-<label for physics style="background-color:antiquewhite;color:rgb(202, 129, 33)">physics mother of sciences</label>
-<input type="checkbox" name="science" value="physics"><br><br>
-<label for mathematics style="background-color:antiquewhite;color:rgb(202, 129, 33)"> Maths and the family of numbers </label>
-<input type="checkbox" name="science" value="mathematics"><br><br>
-<label for chemistry style="background-color:antiquewhite;color:rgb(202, 129, 33)">Chemistry ,please sir</label>
-<input type="checkbox" name="science" value="chemistry"><br><br>
-<label for mechanics style="background-color:antiquewhite;color:rgb(202, 129, 33)">Statics in addition to dynamics</label>
-<input type="checkbox" name="science" value="mechanics"><br><br>
-<button type="submit">submit</button>
-</form>
+        <form action="Page 1.html">
+            <h1>Register</h1>
+
+            <label for name1 class="basic">Please Enter Your Name</label>
+            <input type="text" name="name1">
+            <label for mail class="basic">E-mail(if you don't mind that)</label>
+            <input type="email" name="mail">
+            <label for password class="basic">shshshshsh... your password</label>
+            <input type="password" name="password">
+
+
+            <label for gender class="add">hmmm... what's your gender</label><br>
+            <label>Male</label><input type="radio" name="gender" value="Male">
+            <label>Female</label><input type="radio" name="gender" value="Female">
+
+            <label for fav_hobby class="add">What is your favourite hobby</label><br>
+            <label>Writing</label><input type="checkbox" name="fav_hobby" value="Writing">
+            <label>Reading</label><input type="checkbox" name="fav_hobby" value="Reading">
+            <label>Coding</label><input type="checkbox" name="fav_hobby" value="Coding">
+            <label>A sport</label> <input type="checkbox" name="fav_hobby" value="A sport">
+            <label class="add">I've no permanent hobby</label><input type="checkbox" name="fav_hobby"
+                value="I've no permanent hobby">
+            <label for passion class="add">Do you feel that your time is wasted</label>
+            <input type="radio" name="passion" value="A lot"><label>A lot</label>
+            <input type="radio" name="passion" value="Yes"><label>Yes</label>
+            <input type="radio" name="passion" value="nearly"><label>nearly</label>
+            <input type="radio" name="passion" value="Not at all"><label>Not at all</label>
+            <label for opinion class="add">Do you believe in self-helping books</label>
+            <input type="radio" name="opinion" value="A lot"><label>A lot</label>
+            <input type="radio" name="opinion" value="Yes"><label>Yes</label>
+            <input type="radio" name="opinion" value="nearly"><label>nearly</label>
+            <input type="radio" name="opinion" value="Not at all"><label>Not at all</label>
+            <button type="submit" id="submit">DONE</button><br>
+
+
+
+
+
+        </form>
+    </center>
 </body>
+
 </html>
